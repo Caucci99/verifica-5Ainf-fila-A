@@ -1,7 +1,5 @@
 
-// TODO Inserire il package corretto
-// nota: potete usare il suggerimento della lampadina a sinistra (scegliete l'unica opzione sensata). 
-package it.marconicivitavecchia.as2018_19.c5Ainf.verifica;
+package it.marconicivitavecchia.as2018_19.c5Ainf.verifica; 
 
 import javax.swing.*;
 
@@ -11,17 +9,44 @@ public class Main extends JFrame {
 		super("Verifica in laboratorio");
 		super.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		
-		// TODO Inserire la size in accordo con il wireframe (valori approssimati)
-		super.setSize(__TODO__,__TODO__);
+		// size approssimativa
+		super.setSize(500,500);
 		
-		// TODO Usare StringBuilder per costruire la stringa HTML
+		StringBuilder sb = new StringBuilder();
+		sb.append("<html>");
+		sb.append("<h1>Menu</h1>");
+		// creazione tabella
+				sb.append("<div style='display:table'>");
+				sb.append("<div style='display:table-row'>");
+				sb.append("<div style='display:table-cell'>");
+				sb.append("alias");
+				sb.append("</div>");
+				sb.append("<div style='display:table-cell'>");
+				sb.append("Hostname");
+				sb.append("</div>");
+				sb.append("<div style='display:table-row'>");
+				sb.append("<div style='display:table-cell'>");
+				sb.append("raspberrry");
+				sb.append("</div>");
+				sb.append("<div style='display:table-cell'>");
+				sb.append("server.marconi.it");
+				sb.append("</div>");
+				sb.append("</div>");
+				sb.append("<div style='display:table-row'>");
+				sb.append("<div style='display:table-cell'>");
+				sb.append("CoreSwitch");
+				sb.append("</div>");
+				sb.append("<div style='display:table-cell'>");
+				sb.append("10.0.100.1");
+				sb.append("</div>");
+				sb.append("</div>");
 		
-		// TODO Creare la stringa HTML per il wireframe
-		
-		// TODO Convertire lo StringBuilder in String
-		
-		// TODO Assegnare correttamente la stringa create a JLabel
-		super.add(new JLabel(__TODO__));
+				sb.append("</div>");
+
+				sb.append("</html>");
+
+				String str = sb.toString();
+		super.add(new JLabel(str));
 		super.setVisible(true);
 		 
 		System.out.println("Verifica Swing-GitHub");
